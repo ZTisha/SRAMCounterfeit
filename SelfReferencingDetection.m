@@ -3,6 +3,10 @@ clear all;
 
 %% ============================================================
 %  SCRIPT: Multi-Chip Power-Up State Analysis
+%  Author: Zakia Tisha
+%  Email: zakia.tisha@auburn.edu
+%  Institute: Auburn University
+%  Advisor: Dr. Ujjwal Guin
 %  PURPOSE:
 %   - Read CSV files for single chips or chip pairs
 %   - Odd chip → 1…N states, Even chip → N+1…2N states
@@ -258,3 +262,4 @@ legendStr = [arrayfun(@(x) sprintf('Day1 C%d',x),activeChips,'UniformOutput',fal
              arrayfun(@(x) sprintf('Day%d C%d',n,x),activeChips,'UniformOutput',false)];
 legend(legendStr,'FontSize',12);
 title('Sigma vs Block Sizes (Day 1 vs Final Day)');
+
