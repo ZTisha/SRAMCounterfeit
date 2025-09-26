@@ -1,6 +1,6 @@
 % Program to analyse distribution of percent of 1s in SRAM power-up states for Self-Referencing Tests for Counterfeit Detection.
 
-%% ===========================================================
+%% =========================================================
 %  SCRIPT: Multi-Chip Power-Up State Analysis
 %  Author: Zakia Tisha
 %  Email: zakia.tisha@auburn.edu
@@ -261,6 +261,7 @@ legendStr = [arrayfun(@(x) sprintf('Day1 C%d',x),activeChips,'UniformOutput',fal
              arrayfun(@(x) sprintf('Day%d C%d',n,x),activeChips,'UniformOutput',false)];
 legend(legendStr,'FontSize',12);
 title('Sigma vs Block Sizes (Day 1 vs Final Day)');
+
 
 
 
