@@ -1,3 +1,13 @@
+% Program to plot Histogram of percent of 1s Distribution in New vs Aged SRAM chip for Counterfeit Detection.
+
+%% =========================================================
+%  SCRIPT: Histogram of percent of 1s Distribution in New vs Aged SRAM chip
+%  Author: Zakia Tisha
+%  Email: zakia.tisha@auburn.edu
+%  Institute: Auburn University
+%  Advisor: Dr. Ujjwal Guin
+%  PURPOSE:
+
 clc;
 clear all
 
@@ -9,8 +19,8 @@ fileindex3 = fileindex1;
 n=2;
 
 % Define the range for the second column
-minRange = 0.55; % Replace with your desired minimum value
-maxRange = 0.74 ; % Replace with your desired maximum value
+minRange = 0.55; % desired minimum value
+maxRange = 0.74 ; % desired maximum value
 
 %%Loop through and read the specified CSV files for each set of data
 for i = 1:n
@@ -176,4 +186,5 @@ xlabel('p1s','FontSize',12);
 ylabel('Frequency','FontSize', 12);
 %title('Block Size 64x64');
 %legend('New Chip',' ','7 days aged chip', ' ','FontSize', 20, 'fontname','Times New Roman')
+
 
