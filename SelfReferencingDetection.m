@@ -229,7 +229,7 @@ for b = 1:length(selectedBlocks)
 
         % Add legend entry only if data exists
         if any(~isnan(sigmaVals))
-            plotHandles(end+1) = h; %#ok<AGROW>
+            plotHandles(end+1) = h;
             legendEntries{end+1} = sprintf('Chip %d (%dx%d)', ...
                 chip, selectedBlocks(b), selectedBlocks(b));
         end
@@ -261,6 +261,7 @@ legendStr = [arrayfun(@(x) sprintf('Day1 C%d',x),activeChips,'UniformOutput',fal
              arrayfun(@(x) sprintf('Day%d C%d',n,x),activeChips,'UniformOutput',false)];
 legend(legendStr,'FontSize',12);
 title('Sigma vs Block Sizes (Day 1 vs Final Day)');
+
 
 
 
